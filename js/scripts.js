@@ -21,5 +21,9 @@ $(document).ready(function() {
       $("#answer4, #form1, #back").toggle();
     }
   });
-
+  $("#back").click(function() {
+    $("#form1, #back").toggle();
+    $("#answer1, #answer2, #answer3, answer4").hide();
+    $("input['type=radio']").prop('checked', false)
+  })
 });
