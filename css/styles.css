@@ -1,3 +1,22 @@
+body {
+  padding-bottom: 20%;
+}
+
+img {
+  max-width: 30%;
+  max-height: 30%;
+}
+
 .hide {
   display: none;
+}
+
+#submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#center {
+  margin: 30px;
 }
