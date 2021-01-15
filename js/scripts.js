@@ -10,5 +10,16 @@ $(document).ready(function() {
     const q7 = parseInt($("input[name='q7']:checked").val(), 10);
 
     const result = (q1 + q2 + q3 + q4 + q5 + q6 + q7);
+
+    if (result <= 12) {
+      $("#answer1, #form1, #back").toggle();
+    } else if (result > 12 && result < 19) {
+      $("#answer2, #form1, #back").toggle();
+    } else if (result >= 19 && result < 24) {
+      $("#answer3, #form1, #back").toggle();
+    } else if (result >= 24) {
+      $("#answer4, #form1, #back").toggle();
+    }
   });
+
 });
