@@ -3,9 +3,19 @@
     width: 100%;
   }
   
-  img {
+  .hide img {
     max-width: 50%;
     max-height: 50%;
+    border-radius: 25px;
+    border: 3px inset rgb(61, 59, 59);
+  }
+  
+  #bg {
+    max-width: 100%;
+    height: auto;
+    z-index: -1;
+    filter: blur(15px);
+    opacity: .9;
   }
   
   .jumbotron {
@@ -36,6 +46,10 @@
   
   .hide {
     display: none;
+    text-align: center;
+    font-weight: bolder;
+    font-size: xx-large;
+    font-family: 'Courier New', Courier, monospace;
   }
   
   #submit {
@@ -47,7 +61,11 @@
   #center {
     width: 50%;
     margin: auto;
-    border: 2px blue;
+  }
+  
+  #back {
+    position: absolute;
+    left: 47%;
   }
   
   .footer {
