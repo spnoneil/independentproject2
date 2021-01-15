@@ -1,6 +1,7 @@
 $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
+    window.scrollTo(500, 0);
     const q1 = parseInt($("input[name='q1']:checked").val(), 10);
     const q2 = parseInt($("input[name='q2']:checked").val(), 10);
     const q3 = parseInt($("input[name='q3']:checked").val(), 10);
@@ -20,10 +21,13 @@ $(document).ready(function() {
     } else if (result >= 24) {
       $("#answer4, #form1, #back").toggle();
     }
+    const userName = $("#userNameInput").val();
+    $(".userName").text(userName);
   });
   $("#back").click(function() {
     $("#form1, #back").toggle();
-    $("#answer1, #answer2, #answer3, answer4").hide();
+    $("#answer1, #answer2, #answer3, #answer4").hide();
     $("input['type=radio']").prop('checked', false)
+    window.scrollTo(0, 0);
   })
 });

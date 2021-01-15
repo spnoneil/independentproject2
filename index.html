@@ -16,11 +16,15 @@
       <h3>Find out below!</h3>
     </div>
     <form id="form1">
+      <div id="name">
+        <label for="userNameInput">Before anything, please tell us your name:</label><br>
+        <input id="userNameInput" type="text">
+      </div>
       <ul>
         <li>
           <p>To kick things off, how much experience do you have with computers?</p>
         </li>
-        <div id="radio">
+        <div class="radio">
           <input type="radio" id="q1choice1" name="q1" value="1" required>
           <label for="q1choice1">I like MySpace!</label>
           <br>
@@ -143,19 +147,19 @@
     <div id="center">
       <div id="answer1" class="hide">
         <img src="img/go.jpg" alt="A picture for going">
-        <p>All signs point to Go!</p>
+        <p>Go, <span class="userName"></span>, go! All signs point to Go!</p>
       </div>
       <div id="answer2" class="hide">
         <img src="img/swift.jpg" alt="A picture of Swift">
-        <p>Quick, get into some Swift, swiftly!</p>
+        <p>Quick, <span class="userName"></span>, get into some Swift, swiftly!</p>
       </div>
       <div id="answer3" class="hide">
         <img src="img/ruby.jpeg" alt="A picture of some rubies">
-        <p>Ruby seems like it'd be the jewel in your crown!</p>
+        <p>Ruby seems like it'd be the jewel in your crown, <span class="userName"></span>!</p>
       </div>
       <div id="answer4" class="hide">
         <img src="img/Rust.png" alt="A picture of rust">
-        <p>You should probably try Rust, just keep those skills sharp!</p>
+        <p>You should probably try Rust, <span class="userName"></span>, just keep those skills sharp!</p>
       </div>
     </div>
     <button class="btn btn-secondary hide" id="back">Go Back</button>
