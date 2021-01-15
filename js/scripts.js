@@ -1,9 +1,14 @@
 $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
-    let q1 = parseInt($("input[name='q1']:checked").val());
-    let q2 = parseInt($("input[name='q2']:checked").val());
+    const q1 = parseInt($("input[name='q1']:checked").val(), 10);
+    const q2 = parseInt($("input[name='q2']:checked").val(), 10);
+    const q3 = parseInt($("input[name='q3']:checked").val(), 10);
+    const q4 = parseInt($("input[name='q4']:checked").val(), 10);
+    const q5 = parseInt($("input[name='q5']:checked").val(), 10);
+    const q6 = parseInt($("input[name='q6']:checked").val(), 10);
+    const q7 = parseInt($("input[name='q7']:checked").val(), 10);
 
-    alert("value = " + q1 + q2);
+    const result = (q1 + q2 + q3 + q4 + q5 + q6 + q7);
   });
 });
