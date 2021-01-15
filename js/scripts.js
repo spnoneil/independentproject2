@@ -1,7 +1,9 @@
 $(document).ready(function() {
-  $("form#form1").submit(function(event) {
+  $("form").submit(function(event) {
     event.preventDefault();
-    const q1 = parseInt($("input[name='q1']:checked")).val();
-    alert("value is" + q1);
-  })
-})
+    let q1 = parseInt($("input[name='q1']:checked").val());
+    let q2 = parseInt($("input[name='q2']:checked").val());
+
+    alert("value = " + q1 + q2);
+  });
+});
