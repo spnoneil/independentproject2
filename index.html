@@ -18,8 +18,9 @@
     </div>
     <form id="form1">
       <div id="name" class="form-group">
-        <label for="userNameInput">Before anything else, please tell us your name:</label><br>
-        <input id="userNameInput" type="text" class="form-control">
+        <label for="userNameInput">Before anything else, please tell us your name:</label>
+        <br>
+        <input id="userNameInput" type="text" class="form-control" required>
       </div>
       <ul>
         <li>
@@ -142,32 +143,34 @@
         </div>
       </ul>
       <div id="submit">
-        <button class="btn btn-primary" id="go">
-          <h1>
-          GO!
-        </h1>
+        <button class="btn btn-success" id="go">
+          <h1>GO!</h1>
       </button>
       </div>
     </form>
     <div id="center">
       <div id="answer1" class="hide">
-        <img src="img/go.jpg" alt="A picture for going"><br>
+        <img src="img/go.jpg" alt="A picture for going">
+        <br>
         <p>Go, <span class="userName"></span>, go! All signs point to <strong>Go</strong>!</p>
       </div>
       <div id="answer2" class="hide">
-        <img src="img/swift.jpg" alt="A picture of Swift"><br>
+        <img src="img/swift.jpg" alt="A picture of Swift">
+        <br>
         <p>Quick, <span class="userName"></span>, go learn you some <strong>Swift</strong>, swiftly!</p>
       </div>
       <div id="answer3" class="hide">
-        <img src="img/ruby.jpeg" alt="A picture of some rubies"><br>
+        <img src="img/ruby.jpeg" alt="A picture of some rubies">
+        <br>
         <p><strong>Ruby</strong> seems like it'd be the jewel in your crown, <span class="userName"></span>!</p>
       </div>
       <div id="answer4" class="hide">
-        <img src="img/Rust.png" alt="A picture of rust"><br>
+        <img src="img/Rust.png" alt="A picture of rust">
+        <br>
         <p>You should probably try <strong>Rust</strong>, <span class="userName"></span>, just keep those skills sharp!</p>
       </div>
     </div>
-    <button class="btn btn-secondary hide" id="back">Go Back</button>
+    <button class="btn btn-danger hide" id="back">Go Back</button>
   </div>
   <div class="footer">
     <span class="foot-text">©2021 <a href="https://github.com/spnoneil">Scott O'Neil</a></span>
