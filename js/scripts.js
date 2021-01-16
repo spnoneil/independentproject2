@@ -23,11 +23,13 @@ $(document).ready(function() {
     }
     const userName = $("#userNameInput").val();
     $(".userName").text(userName);
+    $("input[type=radio]").prop("checked", false);
+    $("input[type=text]").val("")
+
   });
   $("#back").click(function() {
     $("#form1, #back").toggle();
     $("#answer1, #answer2, #answer3, #answer4").hide();
-    $("input['type=radio']").prop('checked', false)
     window.scrollTo(0, 0);
-  })
+  });
 });
