@@ -21,108 +21,112 @@
         <label for="userNameInput">Before anything else, please tell us your name:</label>
         <input id="userNameInput" type="text" class="form-control" required>
       </div>
-      <p>To kick things off, how much experience do you have with computers?</p>
-      <div class="radio">
-        <input type="radio" id="q1choice1" name="q1" value="1" required>
-        <label for="q1choice1">I like MySpace!</label>
-        <input type="radio" id="q1choice2" name="q1" value="2">
-        <label for="q1choice2">I once downloaded an auto aim mod on CounterStrike...</label>
-        <input type="radio" id="q1choice3" name="q1" value="3">
-        <label for="q1choice3">I get the 'puters 'putin'.</label>
-        <input type="radio" id="q1choice4" name="q1" value="4">
-        <label for="q1choice4">Man, I do all my coding in binary!</label>
-      </div>
-      <p>Do you have any previous coding experience?</p>
-      <div class="radio">
-        <input type="radio" id="q2choice1" name="q2" value="1" required>
-        <label for="q2choice1">Only <strong>Code</strong>Red Mt. Dew, nawmsayin?!</label>
-        <input type="radio" id="q2choice2" name="q2" value="2">
-        <label for="q2choice2">Oldschool HTML and GeoCities pages FTW!</label>
-        <input type="radio" id="q2choice3" name="q2" value="3">
-        <label for="q2choice3">I half-know Python, I use C#</label>
-        <input type="radio" id="q2choice4" name="q2" value="4">
-        <label for="q2choice4">My father was a personal computer; my mother, a server. 01101100 01100101 01100101 01110100</label>
-      </div>
-      <p>What is your (closest) dream job?</p>
-      <div class="radio">
-        <input type="radio" id="q3choice1" name="q3" value="1" required>
-        <label for="q3choice1">Techbro Guru</label>
-        <input type="radio" id="q3choice2" name="q3" value="2">
-        <label for="q3choice2">Filthy rich performer</label>
-        <input type="radio" id="q3choice3" name="q3" value="3">
-        <label for="q3choice3">Treasure Hunter</label>
-        <input type="radio" id="q3choice4" name="q3" value="4">
-        <label for="q3choice4">Old-timey Prospector</label>
-      </div>
-      <p>Pick an animal (to be, or appreciate, I don't care):</p>
-      <div class="radio">
-        <input type="radio" id="q4choice1" name="q4" value="1" required>
-        <label for="q4choice1">An eeeeeeeeeeagle!</label>
-        <input type="radio" id="q4choice2" name="q4" value="2">
-        <label for="q4choice2">A silly lil kitten</label>
-        <input type="radio" id="q4choice3" name="q4" value="3">
-        <label for="q4choice3">A big, fat hippo</label>
-        <input type="radio" id="q4choice4" name="q4" value="4">
-        <label for="q4choice4">I'M A DWAGON!</label>
-      </div>
-      <p>What's your favorite TYPE of music?</p>
-      <div class="radio">
-        <input type="radio" id="q5choice1" name="q5" value="1" required>
-        <label for="q5choice1">Rock (with or without Roll)</label>
-        <input type="radio" id="q5choice2" name="q5" value="2">
-        <label for="q5choice2">Don't call it "techno," it's ELECTRONICA.</label>
-        <input type="radio" id="q5choice3" name="q5" value="3">
-        <label for="q5choice3">Gregorian chants</label>
-        <input type="radio" id="q5choice4" name="q5" value="4">
-        <label for="q5choice4">.....Other.</label>
-      </div>
-      <p>Tell me, which programming language sounds MOST APPEALING to you?</p>
-      <div class="radio">
-        <input type="radio" id="q6choice1" name="q6" value="1" required>
-        <label for="q6choice1">Swift, I wanna go fast!</label>
-        <input type="radio" id="q6choice2" name="q6" value="2">
-        <label for="q6choice2">Ruby, I like money!</label>
-        <input type="radio" id="q6choice3" name="q6" value="3">
-        <label for="q6choice3">Rust, sounds metal af!</label>
-        <input type="radio" id="q6choice4" name="q6" value="4">
-        <label for="q6choice4">Go, I wanna Go!</label>
-      </div>
-      <p>Finally, pick one of these random things:</p>
-      <div class="radio">
-        <input type="radio" id="q7choice1" name="q7" value="1" required>
-        <label for="q7choice1">Cars</label>
-        <input type="radio" id="q7choice2" name="q7" value="2">
-        <label for="q7choice2">Music</label>
-        <input type="radio" id="q7choice3" name="q7" value="3">
-        <label for="q7choice3">Jewelry</label>
-        <input type="radio" id="q7choice4" name="q7" value="4">
-        <label for="q7choice4">Tools</label>
-      </div>
-      <div id="submit">
-        <button class="btn btn-success" id="go">
-          <h1>GO!</h1>
+      <div id="radiofloat">
+        <p>1. To kick things off, how much experience do you have with computers?</p>
+        <div class="radio">
+          <input type="radio" id="q1choice1" name="q1" value="1" required>
+          <label for="q1choice1">I like MySpace!</label>
+          <input type="radio" id="q1choice2" name="q1" value="2">
+          <label for="q1choice2">I once downloaded an auto aim mod on CounterStrike...</label>
+          <input type="radio" id="q1choice3" name="q1" value="3">
+          <label for="q1choice3">I get the 'puters 'putin'.</label>
+          <input type="radio" id="q1choice4" name="q1" value="4">
+          <label for="q1choice4">Man, I do all my coding in binary!</label>
+        </div>
+        <p>2. Do you have any previous coding experience?</p>
+        <div class="radio">
+          <input type="radio" id="q2choice1" name="q2" value="1" required>
+          <label for="q2choice1">Only <strong>Code</strong>Red Mt. Dew, nawmsayin?!</label>
+          <input type="radio" id="q2choice2" name="q2" value="2">
+          <label for="q2choice2">Oldschool HTML and GeoCities pages FTW!</label>
+          <input type="radio" id="q2choice3" name="q2" value="3">
+          <label for="q2choice3">I half-know Python, I use C#</label>
+          <input type="radio" id="q2choice4" name="q2" value="4">
+          <label for="q2choice4">My father was a personal computer; my mother, a server. 01101100 01100101 01100101 01110100</label>
+        </div>
+        <p>3. What is your (closest) dream job?</p>
+        <div class="radio">
+          <input type="radio" id="q3choice1" name="q3" value="1" required>
+          <label for="q3choice1">Techbro Guru</label>
+          <input type="radio" id="q3choice2" name="q3" value="2">
+          <label for="q3choice2">Filthy rich performer</label>
+          <input type="radio" id="q3choice3" name="q3" value="3">
+          <label for="q3choice3">Treasure Hunter</label>
+          <input type="radio" id="q3choice4" name="q3" value="4">
+          <label for="q3choice4">Old-timey Prospector</label>
+        </div>
+        <p>4. Pick an animal (to be, or appreciate, I don't care):</p>
+        <div class="radio">
+          <input type="radio" id="q4choice1" name="q4" value="1" required>
+          <label for="q4choice1">An eeeeeeeeeeagle!</label>
+          <input type="radio" id="q4choice2" name="q4" value="2">
+          <label for="q4choice2">A silly lil kitten</label>
+          <input type="radio" id="q4choice3" name="q4" value="3">
+          <label for="q4choice3">A big, fat hippo</label>
+          <input type="radio" id="q4choice4" name="q4" value="4">
+          <label for="q4choice4">I'M A DWAGON!</label>
+        </div>
+        <p>5. What's your favorite TYPE of music?</p>
+        <div class="radio">
+          <input type="radio" id="q5choice1" name="q5" value="1" required>
+          <label for="q5choice1">Rock (with or without Roll)</label>
+          <input type="radio" id="q5choice2" name="q5" value="2">
+          <label for="q5choice2">Don't call it "techno," it's ELECTRONICA.</label>
+          <input type="radio" id="q5choice3" name="q5" value="3">
+          <label for="q5choice3">Gregorian chants</label>
+          <input type="radio" id="q5choice4" name="q5" value="4">
+          <label for="q5choice4">.....Other.</label>
+        </div>
+        <p>6. Tell me, which programming language sounds MOST APPEALING to you?</p>
+        <div class="radio">
+          <input type="radio" id="q6choice1" name="q6" value="1" required>
+          <label for="q6choice1">Swift, I wanna go fast!</label>
+          <input type="radio" id="q6choice2" name="q6" value="2">
+          <label for="q6choice2">Ruby, I like money!</label>
+          <input type="radio" id="q6choice3" name="q6" value="3">
+          <label for="q6choice3">Rust, sounds metal af!</label>
+          <input type="radio" id="q6choice4" name="q6" value="4">
+          <label for="q6choice4">Go, I wanna Go!</label>
+        </div>
+        <p>7. Finally, pick one of these random things:</p>
+        <div class="radio">
+          <input type="radio" id="q7choice1" name="q7" value="1" required>
+          <label for="q7choice1">Cars</label>
+          <input type="radio" id="q7choice2" name="q7" value="2">
+          <label for="q7choice2">Music</label>
+          <input type="radio" id="q7choice3" name="q7" value="3">
+          <label for="q7choice3">Jewelry</label>
+          <input type="radio" id="q7choice4" name="q7" value="4">
+          <label for="q7choice4">Tools</label>
+        </div>
+        <div id="submit">
+          <button class="btn btn-success" id="go">
+      <h1>GO!</h1>
       </button>
+        </div>
       </div>
-    </form>
-    <div id="center">
-      <div id="answer1" class="hide">
-        <img src="img/go.jpg" alt="A picture for going">
-        <p>Go, <span class="userName"></span>, go! All signs point to <strong>Go</strong>!</p>
-      </div>
-      <div id="answer2" class="hide">
-        <img src="img/swift.jpg" alt="A picture of Swift">
-        <p>Quick, <span class="userName"></span>, go learn you some <strong>Swift</strong>, swiftly!</p>
-      </div>
-      <div id="answer3" class="hide">
-        <img src="img/ruby.jpeg" alt="A picture of some rubies">
-        <p><strong>Ruby</strong> seems like it'd be the jewel in your crown, <span class="userName"></span>!</p>
-      </div>
-      <div id="answer4" class="hide">
-        <img src="img/Rust.png" alt="A picture of rust">
-        <p>You should probably try <strong>Rust</strong>, <span class="userName"></span>, just keep those skills sharp!</p>
-      </div>
+  </div>
+  </div>
+  </form>
+  <div id="center">
+    <div id="answer1" class="hide">
+      <img src="img/go.jpg" alt="A picture for going">
+      <p>Go, <span class="userName"></span>, go! All signs point to <strong>Go</strong>!</p>
     </div>
-    <button class="btn btn-danger hide" id="back">Go Back</button>
+    <div id="answer2" class="hide">
+      <img src="img/swift.jpg" alt="A picture of Swift">
+      <p>Quick, <span class="userName"></span>, go learn you some <strong>Swift</strong>, swiftly!</p>
+    </div>
+    <div id="answer3" class="hide">
+      <img src="img/ruby.jpeg" alt="A picture of some rubies">
+      <p><strong>Ruby</strong> seems like it'd be the jewel in your crown, <span class="userName"></span>!</p>
+    </div>
+    <div id="answer4" class="hide">
+      <img src="img/Rust.png" alt="A picture of rust">
+      <p>You should probably try <strong>Rust</strong>, <span class="userName"></span>, just keep those skills sharp!</p>
+    </div>
+  </div>
+  <button class="btn btn-danger hide" id="back">Go Back</button>
   </div>
   <div class="footer">
     <span class="foot-text">©2021 <a href="https://github.com/spnoneil">Scott O'Neil</a></span>

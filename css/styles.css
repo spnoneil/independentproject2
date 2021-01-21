@@ -6,8 +6,11 @@
   p,
   input,
   label {
-    line-height: 150%;
     display: block;
+  }
+  
+  #name {
+    display: inline-block;
   }
   
   input {
